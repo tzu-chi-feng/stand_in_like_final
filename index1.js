@@ -1,30 +1,6 @@
 
 	
-    var database = firebase.database().ref();
    
-    
-    database.once('value', function (snapshot) {
-		//console.log(snapshot.val());
-		var name = [];
-		var keys = [];
-		var rank = [];
-		var score=[];
-        var values = Object.values(snapshot.val()); 
-        keys = Object.keys(snapshot.val())[0];
-        console.log(values);
-       
-		
-        values.forEach(function(e) {
-         console.log(e.score);
-		 // score.push (e.score);
-		});
-        score.sort(function(a,b){return a<b?1:-1});
-        console.log(score);
-        for(var i = 0 ; i<10; i++){
-          rank[i] = score[i];
-        }
-		console.log(rank);
-	});
         
 
 
@@ -136,40 +112,8 @@ function gameover() {
 	document.querySelector('.gameover').style.display = 'block';
 
 
-
-    database.once('value', function (snapshot) {
-        var values = Object.values(snapshot.val()); 
-        var keys = Object.keys(snapshot.val());
-		//console.log(values);
-		var name = [];
-       values.forEach(function(e) {
-		  name.push (e.user);
-		});
-		
-		//console.log(keys);
-	    keys.forEach(function(e,index) {
-			console.log(e);
-			//console.log(input);
-			
-			if(e == document.getElementById("inpnum").value){
-				console.log(index);
-				console.log(keys[index]);
-			}
-			else{
-				firebase.database().ref('/').push(
-					{user : document.getElementById("inpnum").value ,
-					score : this.score}
-				)
-			}
-				});
-			});
-    
-
-		}
-
-	
-	console.log(historyScore);
-    console.log(thisScore);
+}
+   
 	
 
 
