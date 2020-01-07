@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Score</title>
+    <meta name="viewport" content="width= device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="score1.css" media="screen" title="no title">
+     <!-- Firebase App is always required and must be first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+ <body style ="background-color: #EDECEB;"> <!--背景顏色-->
+
+  <div class="num_word">
+    目前號碼
+  
+    <button  class="next" id="nt" >下一位領棉花糖囉</button>
+    <span  class="num" id="nm" >0</span>
+    
+  </div>
+  <button class="next_btn" id="ntbtn">回排行榜</button>
+  <div class="next_number" id="ntnum">
+    0
+  
+  </div>
+
+<!--排行榜格子-->
+  <div class="title">
+     超級排行榜    
+  </div>
+<div class="head">
+  <table class="table_head">
+    　<tr>
+      　<td>名次</td>
+      　
+       <td>分數</td>
+      　</tr>
+  </table>            
+  </div>
+<div class="table_bg_1">
+  <table class="table_content_1">
+    <tr>
+      　<td>1</td>
+      
+       <td>65</td>
+      　</tr>
+  </table>
+</div>
+
+<div class="table_bg_3">
+  <table class="table_content_3">
+    <tr>
+      　<td>2</td>
+      
+       <td>55</td>
+      　</tr>
+  </table>
+</div>
+
+<div class="table_bg_5">
+  <table class="table_content_5">
+    <tr>
+      　<td>3</td>
+    
+       <td>50</td>
+      　</tr>
+  </table>
+</div>
+
+<div class="table_bg_7">
+  <table class="table_content_7">
+    <tr>
+      　<td>4</td>
+    
+       <td>45</td>
+      　</tr>
+  </table>
+</div>
+
+<div class="table_bg_9">
+  <table class="table_content_9">
+    <tr>
+      　
+      
+       <td>再接再厲</td>
+      　</tr>
+  </table>
+</div> 
+
+ 
+
+<div>
+  <img class="logo" src="./image/排排讚logo-02.png">
+</div>  
+
+<audio class='butsheep' src="sheep3.mp3" autoplay="autoplay" ></audio>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+<script src="game1.css" charset="utf-8"></script>
+
+<script >
+  
+  var firebaseConfig = {
+    apiKey: "AIzaSyAhQ2glcwTAKmSdOD0dqaLlagPi1MD5_fQ",
+    authDomain: "line-up-dcf97.firebaseapp.com",
+    databaseURL: "https://line-up-dcf97.firebaseio.com",
+    projectId: "line-up-dcf97",
+    storageBucket: "line-up-dcf97.appspot.com",
+    messagingSenderId: "1019759150998",
+    appId: "1:1019759150998:web:98c603baff7fbef30e3fb7",
+    measurementId: "G-2VZBSYNLFP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  //firebase.analytics();
+
+  
+
+ 
+</script>
+
+<script src="score1.js" charset="utf-8"></script>
+<script type="text/javascript" src="score1.js"></script>
+</body>
+			
+
+</html>

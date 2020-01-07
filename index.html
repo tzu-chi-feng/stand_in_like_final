@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="body">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sheeeep</title>
+    <meta name="viewport" content="width= device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="game1.css" media="screen" title="no title">
+
+     <!-- Firebase App is always required and must be first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  
+     <div class="canvas">
+        <!-- 游戏开始 -->
+        <div class="game_start">
+            <div class="head">
+              <img src="head.jpg" alt="">
+              <span class="small_bird" ></span>
+            </div>
+            <div class="btns">
+              <span class="start_btn"></span>
+             
+            </div>
+            <div class="input" >
+              <form>
+                請輸入號碼：<input  id="inpnum" name="number" type="text" />
+                </form>             
+            </div>
+        </div>
+        <!-- 移动条 -->
+        <div class="slider1">
+          <img src="slider.jpg" alt="">
+        </div>
+        <div class="slider2">  
+          <img src="slider.jpg" alt="">
+        </div>
+        <!-- 鸟 🐦-->
+        <div id="flybird" class="bird">
+          
+        </div>
+        <!-- 管道 -->
+        <div class="conduit_group">
+
+        </div>
+        <!-- 游戏结束 -->
+
+        <div class="gameover">
+          <div class="overImg">
+            <img src="game_over.jpg" alt="">
+          </div>
+          <div class="overMessage">
+            <span class="thisScore"></span>
+            <span class="historyScore"></span>
+          </div>
+          <div class="game_restart">
+            <img src="ok.jpg" alt="">
+          </div>
+
+        </div>
+
+        <!-- 积分 -->
+        <div id="scroing" class="scroing">
+            <img src="0.jpg" alt="">
+        </div>
+    </div>
+			<audio class='bgm' src="game_music.mp3" autoplay="autoplay" loop="loop"></audio>
+			<audio class='gameover_bgm' src="game_over.mp3" autoplay="autoplay" ></audio>
+			<audio class='up_bgm' src="bullet.mp3" autoplay="autoplay"></audio>
+
+   
+
+      <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+  <script src="game1.css" charset="utf-8"></script>
+
+<script >
+    
+    var firebaseConfig = {
+      apiKey: "AIzaSyAhQ2glcwTAKmSdOD0dqaLlagPi1MD5_fQ",
+      authDomain: "line-up-dcf97.firebaseapp.com",
+      databaseURL: "https://line-up-dcf97.firebaseio.com",
+      projectId: "line-up-dcf97",
+      storageBucket: "line-up-dcf97.appspot.com",
+      messagingSenderId: "1019759150998",
+      appId: "1:1019759150998:web:98c603baff7fbef30e3fb7",
+      measurementId: "G-2VZBSYNLFP"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    //firebase.analytics();
+
+    
+
+   
+</script>
+<script type="text/javascript" src="index1.js"></script>
+</body>
+
+</html>
